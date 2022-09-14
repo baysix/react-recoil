@@ -1,11 +1,11 @@
 import { atom, selector } from "recoil";
 
-export let textState = atom({
+export const textState = atom({
   key: "textState",
   default: "",
 });
 
-export let charCountState = selector({
+export const charCountState = selector({
   key: "charCountState",
   get: ({ get }) => {
     const text = get(textState);
